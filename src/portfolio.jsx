@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 
-// ── RESPONSIVE HOOK ──────────────────────────────────────────────────────
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -72,7 +71,6 @@ const stats = [
   { value:"6+",  label:"Projects Shipped" },
   { value:"10+", label:"Technologies" },
   { value:"2024",label:"Alusive Grant" },
-  { value:"2027",label:"BSc Graduation" },
 ];
 
 // ── PARTICLE CANVAS ───────────────────────────────────────────────────────
@@ -294,7 +292,7 @@ export default function Portfolio() {
             <span style={{color:T.blue}}>Flutter · React · Node.js · Python · Firebase</span>
           </p>
 
-          <div style={{display:"flex",gap:"16px",flexWrap:"wrap"}}>
+          <div style={{display:"flex",gap:"12px",flexWrap:"wrap",flexDirection:"row",alignItems:"flex-start",marginBottom:"120px"}}>
             {[
               {label:"◈ Hire Me", href:"mailto:akintayodavid2003@gmail.com", primary:true},
               {label:"GitHub ↗", href:"https://github.com/dav1d001/", primary:false, isAnchor:true},
@@ -375,7 +373,7 @@ export default function Portfolio() {
             <p style={{fontFamily:"'Orbitron',sans-serif",fontSize:"9px",letterSpacing:"0.3em",color:T.blue,textTransform:"uppercase",marginBottom:"24px"}}>◈ &nbsp;Origin Story</p>
 
             <p style={{fontFamily:"'Rajdhani',sans-serif",fontSize:"18px",fontWeight:500,lineHeight:1.85,color:T.text,letterSpacing:"0.03em",marginBottom:"24px"}}>
-              21-year-old engineer from <span style={{color:T.blue,fontWeight:700}}>Lagos</span>, building at the intersection of ambition and code.
+              23-year-old engineer from <span style={{color:T.blue,fontWeight:700}}>Lagos</span>, building at the intersection of ambition and code.
               Currently studying Software Engineering at <span style={{color:T.purple,fontWeight:700}}>African Leadership University, Kigali</span> — where problems
               don't just get studied, they get solved.
             </p>
